@@ -150,10 +150,12 @@ point = lerp(p012, p123, t)
 依據幾何長度決定取樣數，逐點連線或打點繪製曲線。
 
 📌 小結
-圖形	演算法	對稱性	特點
-線	Bresenham/Midpoint	無	高效整數法，適用所有斜率
-圓	Midpoint Circle	8 向	利用對稱，整數運算快速
-橢圓	Midpoint Ellipse	4 向	分區域控制斜率，精確對稱繪製
-Bézier 曲線	De Casteljau	N/A	穩定、可漸進細分，適合動畫與曲線繪製
+| 圖形        | 演算法                | 對稱性 | 特點                 |
+| --------- | ------------------ | --- | ------------------ |
+| 線         | Bresenham/Midpoint | 無   | 高效整數法，適用所有斜率       |
+| 圓         | Midpoint Circle    | 8 向 | 利用對稱，整數運算快速        |
+| 橢圓        | Midpoint Ellipse   | 4 向 | 分區域控制斜率，精確對稱繪製     |
+| Bézier 曲線 | De Casteljau       | N/A | 穩定、可漸進細分，適合動畫與曲線繪製 |
+
 
 <img width="353" height="239" alt="painting" src="https://github.com/user-attachments/assets/1a7c727b-407b-411d-a825-a16c7b36cc2c" />
